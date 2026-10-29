@@ -80,18 +80,36 @@
             </div>
         </section>
 
-        <!-- CONTACT -->
+       <!-- CONTACT -->
         <section id="contact" class="section contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:Sophiagakush6@gmail.com">Sophiagakush6@gmail.com</a></p>
             <p>Phone: <a href="tel:+254753326634">+254753326634</a></p>
-        </section>
+
+            <form id="contact-form" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+                <span class="error" id="name-error"></span>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com">
+                <span class="error" id="email-error"></span>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Your message"></textarea>
+                <span class="error" id="message-error"></span>
+
+                <button type="submit">Send Message</button>
+                <p id="form-success"></p>
+            </form>
+        </section> 
     </main>
 
     <!-- FOOTER -->
     <footer class="site-footer">
-        <p>&copy; 2026 Sophia Gakundi</p>
+        <p>&copy;2026 Sophia Gakundi</p>
     </footer>
-
+    
+<script src="script.js"></script>
 </body>
 </html>
